@@ -1,0 +1,137 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.card-dark {
+  background-color: #333;
+  color: white;
+}
+
+.card-light {
+  border: 2px solid #ccc;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.user p {
+  font-size: 10px;
+}
+
+.user-info h3,
+p {
+  margin: 0;
+}
+
+.card-container-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card-container-three {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+.card-container-three img {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  flex: 1 1 auto; /* Let them resize proportionally */
+  max-width: 40%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-with-image {
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 auto; /* Let them resize proportionally */
+  max-width: 60%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card-with-image h3 {
+  margin: 0;
+}
+
+.stars {
+  color: yellow;
+}
+
+.job-title {
+  color: gray;
+}
+
+.carousel {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.carousel .avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 2px solid #ccc;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
