@@ -6,23 +6,29 @@ const testimonials = [
   "Since starting my career in 2021, I have only followed one resource, roadmap.sh. It truly helped me go from 0 to having a job and changing the financial trajectory of my family.",
 ];
 
+const images = ["images/user1.jpg", "images/user2.jpg", "images/user3.jpg"];
+
 const carouselQuote = document.querySelector(".carousel .quote");
+const carouselImage = document.querySelector(
+  ".carousel .carousel-controls .avatars .avatar"
+);
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
 
-function updateQuote() {
+function updateQuoteAndImage() {
   carouselQuote.textContent = testimonials[currentIndex];
+  carouselImage.src = images[currentIndex];
 }
 
 prevButton.addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-  updateQuote();
+  updateQuoteAndImage();
 });
 
 nextButton.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % testimonials.length;
-  updateQuote();
+  updateQuoteAndImage();
 });
 
 // Initialize the first quote
-updateQuote();
+updateQuoteAndImage();
